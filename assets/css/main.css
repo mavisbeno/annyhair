@@ -2044,6 +2044,13 @@ ol {
   margin-top: 40px;
 }
 
+.socialm {
+  color: #fff;
+}
+.socialm:hover {
+  color: #081828;
+}
+
 .hero-area .hero-content .button .btn {
   background-color: #fff;
   color: #ed7100;
