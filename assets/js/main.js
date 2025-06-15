@@ -3,6 +3,45 @@ by Beno mezazem
 */
 
 (function () {
+
+    //====== close hamburger after click on one menu
+    document.querySelectorAll('.navbar-nav .nav-item a').forEach(link => {
+    link.addEventListener('click', () => {
+        const navbarCollapse = document.getElementById('navbarSupportedContent');
+        const navbarToggler = document.querySelector('.navbar-toggler');
+
+        if (navbarCollapse.classList.contains('show')) {
+        const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: true });
+        bsCollapse.hide();
+        }
+
+        // Retirer aussi la classe .active pour que l'icône redevienne un hamburger
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        if (mobileMenuBtn && mobileMenuBtn.classList.contains('active')) {
+        mobileMenuBtn.classList.remove('active');
+        }
+    });
+    });
+
+    //===== close hamburger menu after click on free space 
+    document.addEventListener('click', function (event) {
+        const navbarCollapse = document.getElementById('navbarSupportedContent');
+        const isClickInsideNavbar = navbarCollapse.contains(event.target);
+        const isClickOnToggler = event.target.closest('.navbar-toggler');
+
+        if (navbarCollapse.classList.contains('show') && !isClickInsideNavbar && !isClickOnToggler) {
+            const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: true });
+            bsCollapse.hide();
+
+            // Si tu as une animation avec .active sur le hamburger
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            if (mobileMenuBtn && mobileMenuBtn.classList.contains('active')) {
+            mobileMenuBtn.classList.remove('active');
+            }
+        }
+    });
+
+
     //===== Prealoder
 
     window.onload = function () {
