@@ -317,7 +317,7 @@
                 <!-- Image 2 -->
                 <div class="col-lg-4 col-md-6 col-12 mb-2">
                     <img src="assets/images/realisations/image2.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Réalisation 2"
-                        data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="assets/images/realisations/image2.jpg">
+                         data-bs-image="assets/images/realisations/image2.jpg">
                 </div>
                 <!-- Image 3 -->
                 <div class="col-lg-4 col-md-6 col-12 mb-2">
@@ -341,15 +341,27 @@
     </section>
     <!-- Modal Bootstrap -->
     <!-- Modal -->
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content bg-transparent border-0">
-            <div class="modal-body text-center">
-                <img src="" alt="Image zoomée" class="img-fluid" id="modalImage">
-            </div>
-            </div>
+    <!-- Modal avec carrousel -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <div class="modal-body p-0">
+        <div id="carouselGallery" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+          <div class="carousel-inner"></div>
+
+          <!-- Navigation -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselGallery" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselGallery" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle"></span>
+          </button>
         </div>
+      </div>
     </div>
+  </div>
+</div>
+
 
     <!--/ End gallery Table Area -->
 
@@ -382,6 +394,9 @@
 
                             <button onclick="contactCall()" class="btn btn-dark d-flex align-items-center gap-2 px-4 py-2">
                                 <i class="bi bi-telephone fs-5"></i> Appel<br>+1 438-227-6478
+                            </button>
+                            <button onclick="contactCall2()" class="btn btn-dark d-flex align-items-center gap-2 px-4 py-2">
+                                <i class="bi bi-telephone fs-5"></i> Appel-2<br>+1 438-368-1752
                             </button>
                             
                         </div>
@@ -429,8 +444,8 @@
                                         <li><i class="bi bi-geo-alt-fill fs-5 text-white"></i>
                                              <span class="text-white">Montreal et ses environs</span></li>
                                         <li><i class="bi bi-whatsapp fs-5"></i> +1 438-227-6478</li>
-                                        <li><i class="bi bi-telephone fs-5"></i> +1 438-227-6478</li>
-                                        <li><i class="bi bi-envelope fs-5"></i> email</li>
+                                        <li><i class="bi bi-telephone fs-5"></i> +1 438-227-6478 <br> +1 438-368-1752</li>
+                                        <li><i class="bi bi-envelope fs-5"></i> annyhair@gmail.com </li>
                                         <li><i class="bi bi-chat-text fs-5"></i> +1 438-227-6478</li>
                                     </ul>
                                 </div>
@@ -489,21 +504,36 @@
         });
         cu.start();
     </script>
+    
+    <!-- script de modal-->
     <script>
-        const imageModal = document.getElementById('imageModal');
-        const modalImage = document.getElementById('modalImage');
+  const galleryImages = document.querySelectorAll('.gallery-img');
+  const carouselInner = document.querySelector('#carouselGallery .carousel-inner');
 
-        imageModal.addEventListener('show.bs.modal', function (event) {
-            const triggerImage = event.relatedTarget;
-            const imageSrc = triggerImage.getAttribute('data-bs-image');
-            modalImage.src = imageSrc;
-        });
-    </script>
+  galleryImages.forEach((img, index) => {
+    img.addEventListener('click', () => {
+      carouselInner.innerHTML = '';
+
+      galleryImages.forEach((img, i) => {
+        const src = img.getAttribute('data-bs-image');
+        const active = i === index ? 'active' : '';
+        const item = `
+          <div class="carousel-item ${active}">
+            <img src="${src}" class="d-block w-100 img-fluid" alt="Réalisation ${i + 1}">
+          </div>
+        `;
+        carouselInner.innerHTML += item;
+      });
+    });
+  });
+</script>
+
 
     <!-- script des contacts-->
      <script>
         const phoneNumber = "14382276478";
-        const emailAddress = "hannyhair@gmail.com.com";
+        const phoneNumber2 = "14383681752";
+        const emailAddress = "annyhair@gmail.com";
 
         function contactWhatsApp() {
             window.open(`https://wa.me/${phoneNumber}`, '_blank');
@@ -519,6 +549,9 @@
 
         function contactCall() {
             window.location.href = `tel:${phoneNumber}`;
+        }
+        function contactCall2() {
+            window.location.href = `tel:${phoneNumber2}`;
         }
     </script>
 
