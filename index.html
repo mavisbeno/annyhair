@@ -395,6 +395,9 @@
                             <button onclick="contactCall()" class="btn btn-dark d-flex align-items-center gap-2 px-4 py-2">
                                 <i class="bi bi-telephone fs-5"></i> Appel<br>+1 438-227-6478
                             </button>
+                            <button onclick="contactCall2()" class="btn btn-dark d-flex align-items-center gap-2 px-4 py-2">
+                                <i class="bi bi-telephone fs-5"></i> Appel-2<br>+1 438-368-1752
+                            </button>
                             
                         </div>
                         <div class="d-flex flex-wrap justify-content-center fs-5 gap-4 mt-4">
@@ -441,8 +444,8 @@
                                         <li><i class="bi bi-geo-alt-fill fs-5 text-white"></i>
                                              <span class="text-white">Montreal et ses environs</span></li>
                                         <li><i class="bi bi-whatsapp fs-5"></i> +1 438-227-6478</li>
-                                        <li><i class="bi bi-telephone fs-5"></i> +1 438-227-6478</li>
-                                        <li><i class="bi bi-envelope fs-5"></i> </li>
+                                        <li><i class="bi bi-telephone fs-5"></i> +1 438-227-6478 <br> +1 438-368-1752</li>
+                                        <li><i class="bi bi-envelope fs-5"></i> annyhair@gmail.com </li>
                                         <li><i class="bi bi-chat-text fs-5"></i> +1 438-227-6478</li>
                                     </ul>
                                 </div>
@@ -529,7 +532,8 @@
     <!-- script des contacts-->
      <script>
         const phoneNumber = "14382276478";
-        const emailAddress = "hannyhair@gmail.com";
+        const phoneNumber2 = "14383681752";
+        const emailAddress = "annyhair@gmail.com";
 
         function contactWhatsApp() {
             window.open(`https://wa.me/${phoneNumber}`, '_blank');
@@ -545,6 +549,9 @@
 
         function contactCall() {
             window.location.href = `tel:${phoneNumber}`;
+        }
+        function contactCall2() {
+            window.location.href = `tel:${phoneNumber2}`;
         }
     </script>
 
