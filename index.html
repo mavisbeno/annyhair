@@ -312,17 +312,17 @@
             <div class="row">
                 
 <!--                 
-                <div class="col-lg-4 col-md-6 col-6 mb-2">
+                <div class="col-lg-4 col-md-6 col-6 mb-2 marg-pad-imgvid">
                     <img src="assets/images/realisations/image1.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Réalisation 1"
                         data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="assets/images/realisations/image1.jpg">
                 </div>
                 
-                <div class="col-lg-4 col-md-6 col-6 mb-2">
+                <div class="col-lg-4 col-md-6 col-6 mb-2 marg-pad-imgvid">
                     <img src="assets/images/realisations/image2.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Réalisation 2"
                          data-bs-image="assets/images/realisations/image2.jpg">
                 </div>
                 
-                <div class="col-lg-4 col-md-6 col-6 mb-2">
+                <div class="col-lg-4 col-md-6 col-6 mb-2 marg-pad-imgvid">
                     <img src="assets/images/realisations/image3.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Réalisation 3"
                         data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="assets/images/realisations/image3.jpg">
                 </div>
@@ -330,7 +330,7 @@
 
                 
                 <!-- videos -->
-                 <div class="col-lg-4 col-md-6 col-6 mb-2">
+                 <div class="col-lg-4 col-md-6 col-6 marg-pad-imgvid">
                     <video class="img-fluid rounded shadow-sm gallery-video autoplay-on-scroll" 
                             data-bs-toggle="modal" data-bs-target="#imageModal"
                             data-bs-video="assets/videos/video1.mp4" muted playsinline autoplay loop preload="auto" >
@@ -338,7 +338,7 @@
                         Votre navigateur ne supporte pas les vidéos.
                     </video>
                 </div>
-                <div class="col-lg-4 col-md-6 col-6 mb-2">
+                <div class="col-lg-4 col-md-6 col-6 marg-pad-imgvid">
                     <video class="img-fluid rounded shadow-sm gallery-video autoplay-on-scroll"
                             data-bs-toggle="modal" data-bs-target="#imageModal"
                             data-bs-video="assets/videos/video4.mp4" muted playsinline autoplay loop preload="auto">
@@ -346,7 +346,7 @@
                         Votre navigateur ne supporte pas les vidéos.
                     </video>
                 </div>
-                <div class="col-lg-4 col-md-6 col-6 mb-2">
+                <div class="col-lg-4 col-md-6 col-6 marg-pad-imgvid">
                     <video class="img-fluid rounded shadow-sm gallery-video autoplay-on-scroll"
                             data-bs-toggle="modal" data-bs-target="#imageModal"
                             data-bs-video="assets/videos/video2.mp4" muted playsinline autoplay loop preload="auto">
@@ -356,17 +356,17 @@
                 </div>
 
                 <!-- images -->
-                <div class="col-lg-4 col-md-6 col-6 mb-2">
+                <div class="col-lg-4 col-md-6 col-6 marg-pad-imgvid">
                     <img src="assets/images/realisations/image4.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Réalisation 3"
                         data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="assets/images/realisations/image4.jpg">
                 </div>
 
-                <!-- <div class="col-lg-4 col-md-6 col-6 mb-2">
+                <!-- <div class="col-lg-4 col-md-6 col-6 marg-pad-imgvid">
                     <img src="assets/images/realisations/image5.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Réalisation 3"
                         data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="assets/images/realisations/image5.jpg">
                 </div> -->
 
-                <div class="col-lg-4 col-md-6 col-6 mb-2">
+                <div class="col-lg-4 col-md-6 col-6 marg-pad-imgvid">
                     <video class="img-fluid rounded shadow-sm gallery-video autoplay-on-scroll"
                             data-bs-toggle="modal" data-bs-target="#imageModal"
                             data-bs-video="assets/videos/video6.mp4" muted playsinline autoplay loop preload="auto">
@@ -375,7 +375,7 @@
                     </video>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-6 mb-2">
+                <div class="col-lg-4 col-md-6 col-6 marg-pad-imgvid">
                     <img src="assets/images/realisations/image6.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Réalisation 3"
                         data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="assets/images/realisations/image6.jpg">
                 </div>
@@ -389,7 +389,8 @@
     <!-- Modal avec carrousel -->
 <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-sm">
-    <div class="modal-content bg-transparent border-0">
+      <div class="modal-content position-relative bg-transparent border-0">
+        <button type="button" class="btn-close top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close"></button>
       <div class="modal-body p-0">
         <div id="carouselGallery" class="carousel slide" data-bs-ride="false" data-bs-touch="true">
           <div class="carousel-inner"></div>
