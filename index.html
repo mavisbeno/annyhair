@@ -288,7 +288,8 @@
                         <h2>À propos</h2>
                         <p> Passionnée par la coiffure africaine, je mets en valeur vos cheveux avec soin, style et authenticité. 
                             Chaque tresse est une œuvre d’art, chaque rendez-vous un moment de partage. 
-                            Que ce soit pour un look du quotidien ou une occasion spéciale, ici, on coiffe avec le cœur !!</p>
+                            Que ce soit pour un look du quotidien ou une occasion spéciale, ici, on coiffe avec le cœur !!
+                        </p>
                     </div>
                 </div>
             </div>
@@ -309,33 +310,77 @@
                 </div>
             </div>
             <div class="row">
-                <!-- Image 1 -->
-                <div class="col-lg-4 col-md-6 col-12 mb-2">
+                
+<!--                 
+                <div class="col-lg-4 col-md-6 col-6 mb-2">
                     <img src="assets/images/realisations/image1.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Réalisation 1"
                         data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="assets/images/realisations/image1.jpg">
                 </div>
-                <!-- Image 2 -->
-                <div class="col-lg-4 col-md-6 col-12 mb-2">
+                
+                <div class="col-lg-4 col-md-6 col-6 mb-2">
                     <img src="assets/images/realisations/image2.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Réalisation 2"
                          data-bs-image="assets/images/realisations/image2.jpg">
                 </div>
-                <!-- Image 3 -->
-                <div class="col-lg-4 col-md-6 col-12 mb-2">
+                
+                <div class="col-lg-4 col-md-6 col-6 mb-2">
                     <img src="assets/images/realisations/image3.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Réalisation 3"
                         data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="assets/images/realisations/image3.jpg">
                 </div>
-                <div class="col-lg-4 col-md-6 col-12 mb-2">
+-->
+
+                
+                <!-- videos -->
+                 <div class="col-lg-4 col-md-6 col-6 mb-2">
+                    <video class="img-fluid rounded shadow-sm gallery-video autoplay-on-scroll" 
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-bs-video="assets/videos/video1.mp4" muted playsinline autoplay loop preload="auto" >
+                        <source src="assets/videos/video1.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas les vidéos.
+                    </video>
+                </div>
+                <div class="col-lg-4 col-md-6 col-6 mb-2">
+                    <video class="img-fluid rounded shadow-sm gallery-video autoplay-on-scroll"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-bs-video="assets/videos/video4.mp4" muted playsinline autoplay loop preload="auto">
+                        <source src="assets/videos/video4.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas les vidéos.
+                    </video>
+                </div>
+                <div class="col-lg-4 col-md-6 col-6 mb-2">
+                    <video class="img-fluid rounded shadow-sm gallery-video autoplay-on-scroll"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-bs-video="assets/videos/video2.mp4" muted playsinline autoplay loop preload="auto">
+                        <source src="assets/videos/video2.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas les vidéos.
+                    </video>
+                </div>
+
+                <!-- images -->
+                <div class="col-lg-4 col-md-6 col-6 mb-2">
                     <img src="assets/images/realisations/image4.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Réalisation 3"
                         data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="assets/images/realisations/image4.jpg">
                 </div>
-                <div class="col-lg-4 col-md-6 col-12 mb-2">
+
+                <!-- <div class="col-lg-4 col-md-6 col-6 mb-2">
                     <img src="assets/images/realisations/image5.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Réalisation 3"
                         data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="assets/images/realisations/image5.jpg">
+                </div> -->
+
+                <div class="col-lg-4 col-md-6 col-6 mb-2">
+                    <video class="img-fluid rounded shadow-sm gallery-video autoplay-on-scroll"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-bs-video="assets/videos/video6.mp4" muted playsinline autoplay loop preload="auto">
+                        <source src="assets/videos/video6.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas les vidéos.
+                    </video>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12 mb-2">
+
+                <div class="col-lg-4 col-md-6 col-6 mb-2">
                     <img src="assets/images/realisations/image6.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Réalisation 3"
                         data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="assets/images/realisations/image6.jpg">
                 </div>
+
+
             </div>
         </div>
     </section>
@@ -343,10 +388,10 @@
     <!-- Modal -->
     <!-- Modal avec carrousel -->
 <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
     <div class="modal-content bg-transparent border-0">
       <div class="modal-body p-0">
-        <div id="carouselGallery" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+        <div id="carouselGallery" class="carousel slide" data-bs-ride="false" data-bs-touch="true">
           <div class="carousel-inner"></div>
 
           <!-- Navigation -->
@@ -385,7 +430,7 @@
                             </button>
 
                             <!-- Groupe Appels (wrap mobile) -->
-                            <div class="d-flex flex-wrap flex-sm-nowrap flex-column flex-sm-row gap-3 w-100 justify-content-center call-buttons">
+                            <div class="d-flex flex-wrap flex-sm-nowrap flex-column flex-sm-row gap-2 w-100 justify-content-center call-buttons">
                                 <button onclick="contactCall()" class="btn btn-dark flex-fill py-2">
                                 <i class="bi bi-telephone fs-5"></i> Appel<br>+1 438-227-6478
                                 </button>
@@ -405,9 +450,9 @@
                         </div>
                         <div class="d-flex flex-wrap justify-content-center fs-5 gap-4 mt-4">
                         
-                            <a href="javascript:void(0)" class="socialm"><i class="lni lni-facebook-filled"></i>Facebook</a>
                             <a href="javascript:void(0)" class="socialm"><i class="fab fa-tiktok"></i> TikTok</a>
                             <a href="javascript:void(0)" class="socialm"><i class="fab fa-snapchat"></i> Snapchat</a>
+                            <a href="javascript:void(0)" class="socialm"><i class="lni lni-facebook-filled"></i>Facebook</a>
                             
                         </div>
                     </div>
@@ -508,29 +553,100 @@
         cu.start();
     </script>
     
-    <!-- script de modal-->
+    <!-- Script de modal -->
     <script>
-  const galleryImages = document.querySelectorAll('.gallery-img');
-  const carouselInner = document.querySelector('#carouselGallery .carousel-inner');
+        const galleryItems = document.querySelectorAll('.gallery-img, .gallery-video');
+        const carouselInner = document.querySelector('#carouselGallery .carousel-inner');
 
-  galleryImages.forEach((img, index) => {
-    img.addEventListener('click', () => {
-      carouselInner.innerHTML = '';
+        galleryItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                carouselInner.innerHTML = '';
 
-      galleryImages.forEach((img, i) => {
-        const src = img.getAttribute('data-bs-image');
-        const active = i === index ? 'active' : '';
-        const item = `
-          <div class="carousel-item ${active}">
-            <img src="${src}" class="d-block w-100 img-fluid" alt="Réalisation ${i + 1}">
-          </div>
-        `;
-        carouselInner.innerHTML += item;
-      });
-    });
-  });
-</script>
+                galleryItems.forEach((el, i) => {
+                    let content = '';
+                    const active = i === index ? 'active' : '';
 
+                    if (el.classList.contains('gallery-img')) {
+                        const src = el.getAttribute('data-bs-image');
+                        content = `
+                            <div class="carousel-item ${active}">
+                                <img src="${src}" class="d-block w-100 img-fluid" alt="Réalisation ${i + 1}">
+                            </div>
+                        `;
+                    } else if (el.classList.contains('gallery-video')) {
+                        const videoSrc = el.getAttribute('data-bs-video');
+                        content = `
+                            <div class="carousel-item ${active}">
+                                <video class="d-block w-100 img-fluid" controls autoplay muted preload="auto">
+                                    <source src="${videoSrc}" type="video/mp4">
+                                    Votre navigateur ne prend pas en charge les vidéos.
+                                </video>
+                            </div>
+                        `;
+                    }
+
+                    carouselInner.innerHTML += content;
+                });
+            });
+        });
+    </script>
+
+    <!-- autoplay after slide -->
+     <script>
+        const carousel = document.querySelector('#carouselGallery');
+
+        // Quand un slide devient actif
+        carousel.addEventListener('slid.bs.carousel', () => {
+            // On met en pause toutes les vidéos
+            document.querySelectorAll('#carouselGallery video').forEach(video => {
+            video.pause();
+            });
+
+            // On relance la vidéo active si présente
+            const activeItem = document.querySelector('#carouselGallery .carousel-item.active');
+            const video = activeItem.querySelector('video');
+            if (video) {
+            video.play();
+            }
+        });
+    </script>
+
+    <!-- pause aux videos apres la fermeture du modale -->
+     <script>
+        const modal = document.getElementById('imageModal');
+
+        // Quand le modal est fermé
+        modal.addEventListener('hidden.bs.modal', () => {
+            // On met en pause toutes les vidéos dans le carrousel
+            const videos = modal.querySelectorAll('video');
+            videos.forEach(video => {
+            video.pause();
+            video.currentTime = 0; // optionnel : remet la vidéo au début
+            });
+        });
+    </script>
+
+    <!-- autoplay les videos quand on scroll dessus -->
+     <script>
+        const videos = document.querySelectorAll('.autoplay-on-scroll');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+            const video = entry.target;
+            if (entry.isIntersecting) {
+                video.play();
+            } else {
+                video.pause();
+            }
+            });
+        }, {
+            threshold: 0.4 // au moins 50% de la vidéo visible
+        });
+
+        videos.forEach(video => {
+            observer.observe(video);
+        });
+     </script>
 
     <!-- script des contacts-->
      <script>
