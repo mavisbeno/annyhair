@@ -1411,9 +1411,10 @@ ol {
 ========================================*/
 .header {
   width: 100%;
-  background: transparent;
+  background-color: #ed7100;
   position: absolute;
-  width: 100%;
+  -webkit-box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, 0.5);
   left: 0;
   top: 0;
 }
@@ -1433,7 +1434,7 @@ ol {
     top: 67px !important;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: #ffffff;
     z-index: 9;
     -webkit-box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
@@ -1724,9 +1725,8 @@ ol {
 .navbar-area.sticky {
   position: fixed;
   z-index: 99;
-  background: #ed7100;
-  -webkit-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, 0.5);
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   background: #fff;
