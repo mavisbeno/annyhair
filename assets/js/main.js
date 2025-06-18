@@ -64,10 +64,10 @@ by Beno mezazem
         var logo = document.querySelector('.navbar-brand img')
         if (window.pageYOffset > sticky) {
           header_navbar.classList.add("sticky");
-          logo.src = 'assets/images/logo/logo-anny.svg';
+          logo.src = 'assets/images/logo/logo-anny.png';
         } else {
           header_navbar.classList.remove("sticky");
-          logo.src = 'assets/images/logo/w-logo-anny.svg';
+          logo.src = 'assets/images/logo/w-logo-anny.png';
         }
 
         // show or hide the back-top-top button

@@ -1989,19 +1989,19 @@ ol {
 ========================================*/
 .hero-area {
   position: relative;
-  padding: 150px 0 100px 0;
+  padding: 150px 0 10px 0;
   background: #ed7100;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-area {
-    padding: 150px 0 60px 0;
+    padding: 150px 0 10px 0;
   }
 }
 
 @media (max-width: 767px) {
   .hero-area {
-    padding: 120px 0 50px 0;
+    padding: 120px 0px 20px 0;
   }
 }
 
